@@ -166,7 +166,7 @@ body {
 
 .main-section {
   margin-top: 59px;
-  display: flex !important;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   /* width: 55%; */
@@ -181,7 +181,7 @@ body {
   height: 130px;
   margin-top: 22px;
   border-radius: 10px;
-  display: flex !important;
+  display: flex important;
   justify-content: center;
   align-items: center;
   font-size: 30px;
