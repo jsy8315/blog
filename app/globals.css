@@ -166,7 +166,7 @@ body {
 
 .main-section {
   margin-top: 59px;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   justify-content: center;
   /* width: 55%; */
