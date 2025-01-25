@@ -170,18 +170,18 @@ body {
   flex-direction: column;
   justify-content: center;
   /* width: 55%; */
-  width: 800Px;
+  width: 800px;
 
   /* background-color: lightcoral; */
 }
 
 .main-ad {
-  width: 800Px;
+  width: 800px;
   background-color: black;
   height: 130px;
   margin-top: 22px;
   border-radius: 10px;
-  display: flex important;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;

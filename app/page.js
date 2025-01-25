@@ -34,7 +34,7 @@ export default async function Home() {
               <button className="navbar-main-playground-mobile">Play ground</button>
           </div> */}
           <div className="main-section">
-              <div className="main-ad" style={{display: "flex"}}>
+              <div className="main-ad">
                   Walker's Devlog
               </div>
               <div className="main-content">
