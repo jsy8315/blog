@@ -29,10 +29,10 @@ export default async function Home() {
     <>
       {/* header는 layout에 위치 */}
       <main className="main">
-          <div className="navbar-mobile-list">
+          {/* <div className="navbar-mobile-list">
               <button className="navbar-main-aboutme-mobile">About me</button>
               <button className="navbar-main-playground-mobile">Play ground</button>
-          </div>
+          </div> */}
           <div className="main-section">
               <div className="main-ad" style={{display: "flex"}}>
                   Walker's Devlog
