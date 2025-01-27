@@ -730,6 +730,20 @@ body {
   color: white;
 }
 
+.main-ad02 {
+  width: 100%;
+  background-color: black;
+  height: 90px;
+  margin-top: 22px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+}
+
 .main-content-main {
   background-color: yellow;
   width: 100%;
