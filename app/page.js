@@ -37,15 +37,16 @@ export default async function Home() {
               <div className="main-ad">
                   Walker's Devlog
               </div>
+              <div className="main-ad">
+                  Walker's Devlog
+              </div>
               <div className="main-content">
                   <div className="main-content-main">
-                      <div className="main-content-main-tab" style={{display: "none"}}>
+                      {/* <div className="main-content-main-tab">
                           main-content-main-tab
-                      </div>
+                      </div> */}
                       <div className="main-content-main-list">
-
                         <ListItem adminStatus={adminStatus}  result={result}/>
-
                       </div>
                   </div>
                   {/* sub 컨텐츠 추후 구현 예정 */}
