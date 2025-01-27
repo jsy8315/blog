@@ -717,7 +717,7 @@ body {
 }
 
 .main-ad {
-  width: 100%;
+  /* width: 100%;
   background-color: black;
   height: 90px;
   margin-top: 22px;
@@ -727,7 +727,8 @@ body {
   align-items: center;
   font-size: 25px;
   font-weight: 600;
-  color: white;
+  color: white; */
+  display: none;
 }
 
 .main-ad02 {

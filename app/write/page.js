@@ -23,6 +23,10 @@ export default function Write(){
                 <textarea type="text" rows="30" id='content' name="content" style={{height: '500px'}}></textarea>
                 <br></br>
 
+                <input type="file" accept="image/*">
+                </input>
+                <br></br>
+
                 <span>tag</span>
                 <select id='tag' name="tag">
                     <option value="Javascript">Javascript</option>
