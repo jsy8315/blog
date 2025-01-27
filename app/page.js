@@ -37,7 +37,7 @@ export default async function Home() {
               <div className="main-ad">
                   Walker's Devlog
               </div>
-              <div>
+              <div className="main-ad02">
                   Walker's Devlog
               </div>
               <div className="main-content">

@@ -188,6 +188,21 @@ body {
   color: white;
 }
 
+.main-ad02 {
+  width: 800px;
+  background-color: black;
+  height: 130px;
+  margin-top: 22px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+
+
 .main-content {
   margin-top: 40px;
   /* height: 2000px; */
