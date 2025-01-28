@@ -1,4 +1,10 @@
+'use client'
+import { useState } from "react"
+
 export default function Write(){
+
+    let [src, setSrc] = useState('')
+
     return (
         <div style={{ backgroundColor: "lightgray"}}>
             <h4>글작성페이지요</h4>
@@ -23,8 +29,34 @@ export default function Write(){
                 <textarea type="text" rows="30" id='content' name="content" style={{height: '500px'}}></textarea>
                 <br></br>
 
-                <input type="file" accept="image/*">
+                <input type="file" accept="image/*" onChange={ 
+                    async (e)=>{
+                      let file = e.target.files[0]
+                      let filename = encodeURIComponent(file.name)
+                      let res = await fetch('/api/post/image?file=' + filename)
+                      res = await res.json()
+
+                      //S3 업로드
+                      const formData = new FormData()
+                      Object.entries({ ...res.fields, file }).forEach(([key, value]) => {
+                        formData.append(key, value)
+                      })
+                      let 업로드결과 = await fetch(res.url, {
+                        method: 'POST',
+                        body: formData,
+                      })
+                      console.log(업로드결과)
+                  
+                      if (업로드결과.ok) {
+                        setSrc(업로드결과.url + '/' + filename)
+                      } else {
+                        console.log('실패')
+                      }
+
+                    }
+                }>
                 </input>
+                <img src={src} />
                 <br></br>
 
                 <span>tag</span>
