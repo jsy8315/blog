@@ -40,6 +40,7 @@ export default async function handler(요청, 응답){
                 tag: 요청.body.tag,
                 like: 요청.body.like,
                 date: 요청.body.time,
+                thumbnail: 요청.body.thumbnail
             })
         } catch (error) {
             alert('DB뻑났는디?')

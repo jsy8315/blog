@@ -29,7 +29,7 @@ export default async function Detail(props) {
               <button className="navbar-main-playground-mobile">Play ground</button>
           </div>
           <div className="main-section-detail">
-              <div className="main-section-detail-thumImg">썸네일이미지</div>
+              <div className="main-section-detail-thumImg">{result.thumbnail}</div>
               <div className="main-section-detail-title">{result.title}</div>
               <div className="main-section-detail-tags">#{result.tag}</div>
               <div className="main-section-detail-author">Walker</div>
