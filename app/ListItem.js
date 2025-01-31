@@ -20,7 +20,6 @@ export default function ListItem(props){
                 <Link prefetch={true}  postId={postId} style={{ textDecoration: "none", color: "black"}}  href={"/detail/" + postId}>
                   <div key={postId} className="main-content-thum">
                     <PostsText i={i} result={props.result}></PostsText>
-                    {/* <DetailUseRouter></DetailUseRouter> */}
 
                     {/* 관리자만 보이는 수정/삭제 버튼 */}
                     <div
@@ -49,27 +48,8 @@ export default function ListItem(props){
                           )
                       }}>삭제</button>
                     </div>
-                    {/* <Link prefetch={true} style={{ textDecoration: "none", color: "black"}}  
-                      href={"/edit/" + postId }
-                    >
-                      <button>수정</button>
-                    </Link>
-                    <button onClick={(event)=>{
-                      event.stopPropagation();
-                      event.preventDefault();
-                       console.log('클릭됨요')
-                        fetch("/api/post/delete",{
-                            method : 'DELETE',
-                            body : postId
-                        })
-                        .then(
-                            ()=>{
-                                console.log("ajax를 활용한 삭제버튼 테스트")
-                            }
-                        )
-                    }}>삭제</button> */}
                     <div className="main-content-thum-img-wrap">
-                      <img src={`food${i}.png`} alt="발행글 썸네일" className="main-content-thum-img"/>
+                      <img src={a.thumbnail} alt="발행글 썸네일" className="main-content-thum-img"/>
                     </div>
                   </div>
                 </Link>

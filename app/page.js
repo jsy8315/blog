@@ -49,6 +49,11 @@ export default async function Home() {
                         <ListItem adminStatus={adminStatus}  result={result}/>
                       </div>
                   </div>
+
+
+
+
+
                   {/* sub 컨텐츠 추후 구현 예정 */}
                   <div className="main-content-sub" style={{display: 'none'}}>
                       <div className="main-content-sub-hotcontents">
@@ -71,6 +76,10 @@ export default async function Home() {
                           태그들
                       </div>
                   </div>
+
+
+
+
               </div>
           </div>
       </main>

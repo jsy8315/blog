@@ -29,7 +29,14 @@ export default async function Detail(props) {
               <button className="navbar-main-playground-mobile">Play ground</button>
           </div>
           <div className="main-section-detail">
-              <div className="main-section-detail-thumImg">{result.thumbnail}</div>
+              <img className="main-section-detail-thumImg-img" 
+                   style={{
+                    backgroundImage: `url(${result.thumbnail})`, // ✅ 올바른 URL 삽입
+                    backgroundRepeat: "no-repeat", // ✅ no-repeat 설정
+                    backgroundSize: "100% 100%" // ✅ 크기 설정
+                  }} 
+                   src={result.thumbnail}
+              />
               <div className="main-section-detail-title">{result.title}</div>
               <div className="main-section-detail-tags">#{result.tag}</div>
               <div className="main-section-detail-author">Walker</div>

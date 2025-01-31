@@ -390,19 +390,23 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 800Px;
+  width: 700Px;
+  margin-bottom: 20px;
+
 }
 
-.main-section-detail-thumImg {
+.main-section-detail-thumImg-img {
   background-color: lightblue;
   width: 100%;
   height: 400px;
   margin-top: 35px;
-  padding-bottom: 20px;
+
 }
+
 
 .main-section-detail-title {
   /* background-color: lightcoral; */
+  margin-top: 40px;
   font-size: 50px;
   font-weight: 600;
   padding-bottom: 20px;

@@ -30,7 +30,7 @@ export default function Write(){
                 <br></br>
 
                 <span>썸네일이미지선택</span>
-                <input type="file" accept="image/*"  onChange={ 
+                <input type="file" accept="image/*" onChange={ 
                     async (e) => {
                         let file = e.target.files[0];
                         if (!file) return;
@@ -74,10 +74,9 @@ export default function Write(){
                         }
                     }
                 } />
-
-                <div>
-                    <img id="thumbnail" name="thumbnail" value={src}  src={src} />
-                </div>
+                <img id="thumbnail" name="thumbnail" value={src}  src={src} />
+                
+                <input type="hidden" name="thumbnail" value={src} />
                 <br></br>
 
                 <span>tag</span>
