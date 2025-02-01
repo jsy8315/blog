@@ -7,6 +7,7 @@ import React from "react";
 import { ObjectId } from "mongodb";
 import Comment from "./Comment";
 import { notFound } from "next/navigation";
+import ReactMarkdown from "react-markdown";
 
 export default async function Detail(props) {
   
@@ -42,7 +43,9 @@ export default async function Detail(props) {
               <div className="main-section-detail-author">Walker</div>
               <div className="main-section-detail-date">{result.date}</div>
               <div className="main-section-detail-content">
-                {result.content}
+                <div className="markdown-body">
+                  <ReactMarkdown>{result.content}</ReactMarkdown>
+                </div>
               </div>
               <div className="main-section-detail-like">좋아요 {result.like}</div>
               <div className="main-section-detail-comments">

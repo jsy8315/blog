@@ -1,9 +1,11 @@
 'use client'
 import { useState } from "react"
+import ReactMarkdown from "react-markdown";
 
 export default function Write(){
 
-    const [src, setSrc] = useState('')
+    const [src, setSrc] = useState('');
+    const [content, setContent] = useState("");
 
     return (
         <div style={{ backgroundColor: "lightgray"}}>
@@ -26,7 +28,19 @@ export default function Write(){
                 <br></br>
 
                 <span>content</span>
-                <textarea type="text" rows="30" id='content' name="content" style={{height: '500px'}}></textarea>
+                <textarea 
+                    type="text" 
+                    rows="30" 
+                    id='content' 
+                    name="content" 
+                    style={{height: '500px'}}
+                    value={content}
+                    onChange={(e) => setContent(e.target.value)}
+                    placeholder="여기에 글을 작성 & 이미지 URL을 ![설명](URL) 형식으로 입력"
+                >
+                </textarea>
+                <h4>미리보기</h4>
+                <ReactMarkdown>{content}</ReactMarkdown>
                 <br></br>
 
                 <span>썸네일이미지선택</span>
