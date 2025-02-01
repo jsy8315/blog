@@ -32,9 +32,9 @@ export default async function Detail(props) {
           <div className="main-section-detail">
               <img className="main-section-detail-thumImg-img" 
                    style={{
-                    backgroundImage: `url(${result.thumbnail})`, // ✅ 올바른 URL 삽입
-                    backgroundRepeat: "no-repeat", // ✅ no-repeat 설정
-                    backgroundSize: "100% 100%" // ✅ 크기 설정
+                    backgroundImage: `url(${result.thumbnail})`, 
+                    backgroundRepeat: "no-repeat", 
+                    backgroundSize: "100% 100%"  
                   }} 
                    src={result.thumbnail}
               />
