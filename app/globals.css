@@ -791,6 +791,13 @@ body {
   
 }
 
+.main-content-thum-text {
+  width: 100%;
+  /* background-color: lightcyan; */
+  background-color: white;
+  /* padding-right: 10px; */
+}
+
 .navbar-main-list {
   display: block;
   height: 28px;
