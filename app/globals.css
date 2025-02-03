@@ -286,7 +286,7 @@ body {
 
 .main-content-thum-img {
   padding: 0px;
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   border-radius: 5px;
   width: 160px;
   height: 160px;
@@ -294,7 +294,7 @@ body {
 
 .main-content-thum-img {
   /* width: 23%; */
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   width: 160px;
   height: 110px;
   border-radius: 5px;
@@ -310,7 +310,7 @@ body {
 }
 
 .main-content-sub-hotcontents {
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
   height: 260px;
   display: flex;
   flex-direction: column;
@@ -320,28 +320,28 @@ body {
   color: rgb(78, 89, 104);
   height: 30px;
   font-size: 13px;
-  background-color: lightskyblue;
+  /* background-color: lightskyblue; */
 }
 
 .main-content-sub-hotcontents01 {
   margin-top: 20px;
   height: 50px;
-  background-color: lightseagreen;
+  /* background-color: lightseagreen; */
 }
 
 .main-content-sub-hotcontents02 {
   margin-top: 20px;
   height: 50px;
-  background-color: lightseagreen;
+  /* background-color: lightseagreen; */
 }
 
 .main-content-sub-hotcontents03 {
   margin-top: 20px;
   height: 50px;
-  background-color: lightseagreen;
+  /* background-color: lightseagreen; */
 }
 .main-content-sub-recentrepls {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   height: 570px
 }
 
@@ -349,30 +349,30 @@ body {
   color: rgb(78, 89, 104);
   font-size: 13px;
   height: 30px;
-  background-color: lightskyblue;
+  /* background-color: lightskyblue; */
 }
 
 .main-content-sub-recentrepls01 {
   margin-top: 20px;
   height: 150px;
-  background-color: lightseagreen;
+  /* background-color: lightseagreen; */
 }
 
 .main-content-sub-recentrepls02 {
   margin-top: 20px;
   height: 150px;
-  background-color: lightseagreen;
+  /* background-color: lightseagreen; */
 }
 
 .main-content-sub-recentrepls03 {
   margin-top: 20px;
   height: 150px;
-  background-color: lightseagreen;
+  /* background-color: lightseagreen; */
 }
 
 
 .main-content-sub-tags {
-  background-color: skyblue;
+  /* background-color: skyblue; */
   height: 400px
 }
 
@@ -381,7 +381,7 @@ body {
 }
 
 .main-section-admin {
-  background-color: lightslategrey;
+  /* background-color: lightslategrey; */
   margin-top: 59px;
   display: flex;
   flex-direction: column;
@@ -402,7 +402,7 @@ body {
 }
 
 .main-section-detail-thumImg-img {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   width: 100%;
   height: auto;    
   margin-top: 35px;
@@ -796,7 +796,7 @@ body {
 }
 
 .main-content-main {
-  background-color: yellow;
+  /* background-color: yellow; */
   width: 100%;
   height: 80%;
 }
