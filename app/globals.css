@@ -781,6 +781,14 @@ body {
   color: white;
 }
 
+.main-content {
+  margin-top: 24px;
+  /* height: 2000px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
 .main-content-main {
   background-color: yellow;
   width: 100%;
