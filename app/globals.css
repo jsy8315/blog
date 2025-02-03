@@ -681,6 +681,28 @@ body {
 
 @media screen and (max-width: 900px) {/* 스마트폰 화면 */
 
+.navbar-logo {
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  color: black;
+
+}  
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 59px;
+  border-bottom: 1px solid lightgrey;
+  padding: 5px 30px 0px 30px;
+  
+}
+
 .navbar-main-aboutme{
   display: none;
 }
