@@ -4,12 +4,12 @@ import { useEffect, useState } from 'react'
 
 export default function Comment(props){
     
-    let randomIdHead = ['누워있는', '졸고있는', '배고픈', '날아가는', '게임하는', '놀고있는', '돌고있는', '울고있는', '맞고있는','청소하는', '배부른','다이어트하는', '혼나는', '커밋하는'];
-    let randomIdBody = ['파란달팽이','빨간달팽이','스포아','스텀프','주황버섯','초록버섯','뿔버섯','스톤골렘','슬라임','돼지','리본돼지','옥토퍼스','버블링','엑스텀프','스티지',];
+    const randomIdHead = ['누워있는', '졸고있는', '배고픈', '날아가는', '게임하는', '놀고있는', '돌고있는', '울고있는', '맞고있는','청소하는', '배부른','다이어트하는', '혼나는', '커밋하는'];
+    const randomIdBody = ['파란달팽이','빨간달팽이','스포아','스텀프','주황버섯','초록버섯','뿔버섯','스톤골렘','슬라임','돼지','리본돼지','옥토퍼스','버블링','엑스텀프','스티지',];
     const randomIdProfile = ['🐶', '🐱', '🐭', '🐹', '🐰', '🦊', '🐻', '🐼', '🐻‍❄️', '🐨', '🐯', '🦁', '🐮', '🐷']
-    let [randomId, setRandomId] = useState('도도한도르마무')
+    const [randomId, setRandomId] = useState('도도한도르마무')
     const [randomIdProfileImg, setRandomIdProfileImg] = useState('🐱');
-    let [randomIdNum, setRandomIdNum ] = useState(0);
+    const [randomIdNum, setRandomIdNum ] = useState(0);
     const [commmentCont, setCommmentCont] = useState(''); // 입력 중인 댓글
 
     const [comment, setComment] = useState([]); // 기존 댓글 데이터
