@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
+import useSWR from 'swr';
 
 
 export default function Comment(props){
@@ -128,8 +129,4 @@ export default function Comment(props){
         </>
         
     )
-
-    useEffect(()=>{
-        fetch()
-    }, [])
 }
