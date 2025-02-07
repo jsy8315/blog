@@ -1,21 +1,14 @@
 import Image from "next/image"; // 최적화된 이미지 적용을 위한 Import
 import Link from "next/link";
-// import styles from "./page.module.css";
-import { MongoCLient } from "mongodb";
-import { connectDB } from '@/util/database';
 import React from "react";
-import { ObjectId } from "mongodb";
 import Comment from "./Comment";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
+import { getPostById } from '../../lib/post';
 
-export default async function Detail(props) {
+export default async function Detail({params}) {
   
-  // DB입출력 코드는 server component 안에서만 사용
-  const db = (await connectDB).db("forum")
-  let result = await db.collection('post').findOne({ _id: new ObjectId(props.params.id) }) // 컬렉션의 중 title에 해당되는 게시물만 가져오기
-  console.log(props.params.id)
-  let postId = props.params.id;
+  const result = await getPostById(params.id);
 
   if (result === null) {
     return notFound()
@@ -49,7 +42,7 @@ export default async function Detail(props) {
               </div>
               <div className="main-section-detail-like">좋아요 {result.like}</div>
               <div className="main-section-detail-comments">
-                <Comment  parentId={props.params.id}/>
+                <Comment  parentId={params.id}/>
               </div>
           </div>
       </main>
