@@ -65,7 +65,7 @@ export default function ListItem(props){
 
 function PostsText(props){
     return(
-      <>
+      
         <div className="main-content-thum-text">
           <div className="main-content-thum-title" key={props.i}> 
             {props.result[props.i].title}
@@ -78,7 +78,7 @@ function PostsText(props){
             {props.result[props.i].tag}
           </div>
         </div>
-      </>
+      
       
     )
   }
