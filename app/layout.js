@@ -64,12 +64,6 @@ export default async function RootLayout({ children }) {
             <div className="navbar-main-search" style={{display: "none"}}>
               <img src="/searchImg.svg" className="navbar-main-search-img"/>
             </div>
-
-            {/* <NavbarList/> */}
-            {/* <div className="navbar-main-list">
-              <img className="navbar-main-list-img" src="/open-menu-6208.svg"/>
-              <img className="navbar-main-list-img-x" src="/xicon.svg"/>
-            </div> */}
           </div>
         </header>
         {children}
